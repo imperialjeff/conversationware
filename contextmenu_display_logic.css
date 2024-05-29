@@ -1,0 +1,29 @@
+ul.contextmenu, ul.contextmenu ul, ul.contextmenu li {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+ul.contextmenu > li > ul.children {
+    padding-left: 1.5em;
+}
+ul.contextmenu > li > ul.children ul.children {
+    padding-left: 2em;
+}
+ul.contextmenu > li > ul.children ul.children a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+li.page_item_has_children ul {
+    display: none;
+}
+li.current_page_ancestor > ul.children, li.current_page_item > ul.children {
+    display: block;
+}
+ul.contextmenu > li.current_page_ancestor,
+ul.contextmenu > li.current_page_item {
+    background-color: #eaeaea;
+    padding-left: 15px;
+}
+li.current_page_item > a {
+    color: var(--global-palette5);
+}
