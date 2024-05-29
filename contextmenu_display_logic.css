@@ -19,11 +19,30 @@ li.page_item_has_children ul {
 li.current_page_ancestor > ul.children, li.current_page_item > ul.children {
     display: block;
 }
+ul.contextmenu > li {
+    padding-left: 15px;
+	padding-right: 15px;
+}
 ul.contextmenu > li.current_page_ancestor,
 ul.contextmenu > li.current_page_item {
-    background-color: #eaeaea;
-    padding-left: 15px;
+    background-color: #f7f7f7;
 }
 li.current_page_item > a {
     color: var(--global-palette5);
+}
+li.page_item_has_children {
+    position: relative;
+}
+li.page_item_has_children > a:after {
+    content: "›";
+    font-size: 20px;
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 20px;
+}
+li.page_item_has_children.current_page_item > a:after {
+    font-size: 23px;
+    top: 5px;
+    transform: rotate(90deg) scale(1.3, 1);
 }
