@@ -1,3 +1,4 @@
+<?php
 /**
  * Add "Menu Order" column toggle to Screen Options
  */
